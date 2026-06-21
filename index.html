@@ -7,39 +7,76 @@
     <style>
         body { background-color: #050505; color: #ffffff; font-family: 'Helvetica Neue', Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
         
-        /* Logo Size Bada Kar Diya */
+        /* Bada Logo */
         .logo-section { padding: 60px 20px; }
         .logo-section img { width: 500px; max-width: 95%; height: auto; }
         
         .section-title { color: #d4af37; font-size: 28px; letter-spacing: 3px; margin: 50px 0 30px; text-transform: uppercase; }
         
+        /* Product Card Design */
         .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 20px; }
-        .card { background: #111; padding: 20px; border-radius: 15px; width: 260px; border: 1px solid #333; transition: 0.4s; }
+        .card { background: #111; padding: 20px; border-radius: 15px; width: 280px; border: 1px solid #333; transition: 0.4s; }
         .card:hover { border-color: #d4af37; transform: translateY(-10px); }
         .card img { width: 100%; height: 280px; object-fit: cover; border-radius: 10px; }
-        .card h3 { margin: 20px 0 10px; font-size: 18px; color: #fff; }
-        .card .price { color: #d4af37; font-size: 20px; font-weight: bold; margin-bottom: 15px; }
+        .card h3 { margin: 20px 0 5px; font-size: 20px; color: #fff; }
+        .card p { font-size: 14px; color: #aaa; margin-bottom: 10px; }
+        .card .price { color: #d4af37; font-size: 22px; font-weight: bold; margin-bottom: 15px; }
         
-        .whatsapp-btn { display: inline-block; margin: 50px 0; padding: 18px 40px; background: #25D366; color: #000; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 18px; }
+        /* WhatsApp Button */
+        .whatsapp-btn { display: inline-block; margin: 50px 0; padding: 18px 40px; background: #25D366; color: #000; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 18px; transition: 0.3s; }
+        .whatsapp-btn:hover { background: #1ebd5d; transform: scale(1.05); }
     </style>
 </head>
 <body>
 
+    <!-- Logo -->
     <div class="logo-section">
-        <img src="image_08.png" alt="Duskin Logo">
+        <img src="image_8.png" alt="Duskin Logo">
     </div>
 
     <h2 class="section-title">Exclusive Collection</h2>
     
+    <!-- Product Grid -->
     <div class="grid">
-        <div class="card"><img src="image_10.png" alt="Royal Gold"><h3>Royal Gold</h3><div class="price">₹4,499</div></div>
-        <div class="card"><img src="image_09.png" alt="Classic Silver"><h3>Classic Silver</h3><div class="price">₹3,999</div></div>
-        <div class="card"><img src="image_11.png" alt="Timeless Brown"><h3>Timeless Brown</h3><div class="price">₹3,499</div></div>
-        <div class="card"><img src="watch1.png" alt="Luxury Driver"><h3>Luxury Driver</h3><div class="price">₹2,999</div></div>
-        <div class="card"><img src="watch2.png" alt="Legacy Classic"><h3>Legacy Classic</h3><div class="price">₹3,299</div></div>
+        <!-- Watch 1 -->
+        <div class="card">
+            <img src="image_10.png" alt="Royal Gold">
+            <h3>Royal Gold</h3>
+            <p>Premium metal strap elegance</p>
+            <div class="price">₹4,499</div>
+        </div>
+        <!-- Watch 2 -->
+        <div class="card">
+            <img src="image_9.png" alt="Classic Silver">
+            <h3>Classic Silver</h3>
+            <p>Modern design with luxury finish</p>
+            <div class="price">₹3,999</div>
+        </div>
+        <!-- Watch 3 -->
+        <div class="card">
+            <img src="image_11.png" alt="Timeless Brown">
+            <h3>Timeless Brown</h3>
+            <p>Genuine leather for bold looks</p>
+            <div class="price">₹3,499</div>
+        </div>
+        <!-- Watch 4 -->
+        <div class="card">
+            <img src="watch1.png" alt="Luxury Driver">
+            <h3>Luxury Driver</h3>
+            <p>Perfect for daily wear</p>
+            <div class="price">₹2,999</div>
+        </div>
+        <!-- Watch 5 -->
+        <div class="card">
+            <img src="watch2.png" alt="Legacy Classic">
+            <h3>Legacy Classic</h3>
+            <p>Sophisticated and timeless</p>
+            <div class="price">₹3,299</div>
+        </div>
     </div>
 
-    <a href="https://wa.me/919510753213" class="whatsapp-btn">Order on WhatsApp</a>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-btn">Order on WhatsApp</a>
 
     <footer style="padding: 40px; color: #555;">&copy; 2026 DUSKIN WATCHES. All Rights Reserved.</footer>
 
