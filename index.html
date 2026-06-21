@@ -3,58 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Duskin Watches | Premium Timepieces</title>
+    <title>DUSKIN WATCHES | Official</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #0b0b0b; color: #fff; text-align: center; }
-        header { padding: 40px 20px; border-bottom: 1px solid #222; }
-        .logo { font-size: 2.5rem; font-weight: bold; letter-spacing: 4px; color: #d4af37; text-transform: uppercase; }
-        .tagline { color: #888; font-size: 1rem; margin-top: 5px; }
-        .hero { padding: 60px 20px; }
-        .hero h1 { font-size: 2.2rem; margin-bottom: 20px; color: #f5f5f5; }
-        .video-container { max-width: 800px; margin: 0 auto 40px auto; border: 2px solid #333; border-radius: 8px; overflow: hidden; background: #000; }
-        video { width: 100%; display: block; }
-        .products { display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; padding: 40px 20px; max-width: 1200px; margin: 0 auto; }
-        .product-card { background: #161616; border: 1px solid #252525; border-radius: 12px; padding: 20px; width: 340px; text-align: center; transition: 0.3s; }
-        .product-card:hover { border-color: #d4af37; }
-        .product-card img { width: 100%; height: auto; border-radius: 8px; margin-bottom: 15px; }
-        .product-title { font-size: 1.4rem; margin-bottom: 10px; color: #fff; }
-        .cta-btn { display: inline-block; background-color: #25d366; color: white; padding: 12px 30px; font-weight: bold; text-decoration: none; border-radius: 25px; margin-top: 15px; transition: 0.3s; font-size: 1rem; }
-        .cta-btn:hover { background-color: #128c7e; transform: translateY(-2px); }
-        footer { padding: 40px 20px; color: #555; font-size: 0.9rem; border-top: 1px solid #222; margin-top: 60px; }
+        body { background: #000; color: #fff; font-family: sans-serif; text-align: center; margin: 0; }
+        .logo-section { padding: 40px; }
+        .logo-section img { width: 180px; }
+        
+        .section-title { color: #d4af37; margin: 40px 0 20px; text-transform: uppercase; }
+        
+        .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px; }
+        .card { background: #1a1a1a; padding: 15px; border-radius: 12px; width: 280px; }
+        .card img { width: 100%; border-radius: 8px; }
+        .card h3 { margin: 15px 0 5px; color: #fff; }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">Duskin</div>
-        <div class="tagline">Luxury & Elegance on Your Wrist</div>
-    </header>
+    <!-- Header Logo -->
+    <div class="logo-section">
+        <img src="image_08.png" alt="Duskin Logo">
+    </div>
 
-    <section class="hero">
-        <h1>Experience the Luxury</h1>
-        
-    </section>
-
-    <section class="products">
-        <div class="product-card">
-            <img src="watch1.png" alt="Duskin Classic Silver">
-            <div class="product-title">Duskin Classic Silver</div>
-            <p style="color: #aaa; font-size: 0.9rem;">Elegant square dial with steel link bracelet.</p>
-            <a href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20am%20interested%20in%20Duskin%20Classic%20Silver" class="cta-btn" target="_blank">Order on WhatsApp</a>
+    <!-- New Collection -->
+    <h2 class="section-title">New Arrivals</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="image_10.png" alt="Royal Gold">
+            <h3>Royal Gold</h3>
         </div>
+    </div>
 
-        <div class="product-card">
-            <img src="watch2.png" alt="Duskin Topographic Black">
-            <div class="product-title">Duskin Topographic</div>
-            <p style="color: #aaa; font-size: 0.9rem;">Unique wave pattern dial with sleek premium strap.</p>
-            <a href="https://wa.me/919510753213?text=Hi,%20I%20am%20interested%20in%20Duskin%20Topographic" class="cta-btn" target="_blank">Order on WhatsApp</a>
+    <!-- Classic Collection -->
+    <h2 class="section-title">Our Classics</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="image_09.png" alt="Classic Silver">
+            <h3>Classic Silver</h3>
         </div>
-    </section>
-
-    <footer>
-        &copy; 2026 Duskin Watches. All Rights Reserved.
-    </footer>
+        <div class="card">
+            <img src="image_11.png" alt="Brown Leather">
+            <h3>Timeless Brown</h3>
+        </div>
+    </div>
 
 </body>
 </html>
