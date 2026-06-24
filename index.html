@@ -184,12 +184,17 @@
             letter-spacing: 1px;
             text-transform: uppercase;
         }
+        
+        /* Updated Link Style so email is always visible */
         .contact-card a {
-            color: #aaaaaa;
+            color: #ffffff; /* Bright white for better visibility */
             text-decoration: none;
-            font-size: 1rem;
+            font-size: 1.05rem;
             transition: color 0.3s;
             letter-spacing: 1px;
+            word-break: break-all; /* Ye lambi email ko mobile me cut hone nahi dega */
+            display: block; 
+            font-weight: 400;
         }
         .contact-card a:hover {
             color: #D4AF37;
@@ -258,23 +263,23 @@
             <div class="contact-card">
                 <div class="contact-icon">✉️</div>
                 <h3>Email Us</h3>
-                <!-- Yahan apni Duskin wali email id daalein -->
-                <a href="mailto:duskinwatches@gmail.com">contact@duskinwatches.shop</a>
+                <!-- Yahan main aapki Duskinwatches@gmail.com set kar di hai -->
+                <a href="mailto:Duskinwatches@gmail.com">Duskinwatches@gmail.com</a>
             </div>
 
             <!-- WhatsApp -->
             <div class="contact-card">
                 <div class="contact-icon">💬</div>
                 <h3>WhatsApp</h3>
-                <!-- Yahan apna number daalein (Example: 919999999999) -->
-                <a href="https://wa.me/919510743213" target="_blank">Message Support</a>
+                <!-- Yahan WhatsApp number set karna hai XXXXXXXXXX ki jagah -->
+                <a href="https://wa.me/919510753213" target="_blank">Message Support</a>
             </div>
 
             <!-- Call -->
             <div class="contact-card">
                 <div class="contact-icon">📞</div>
                 <h3>Call Us</h3>
-                <!-- Yahan apna phone number daalein -->
+                <!-- Yahan bhi calling number set karna hai XXXXXXXXXX ki jagah -->
                 <a href="tel:+919510753213">+91 XXXXX XXXXX</a>
             </div>
         </div>
