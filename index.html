@@ -4,27 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DUSKIN WATCHES | Official Luxury Store</title>
+    
+    <!-- Google Fonts link kiya hai luxury serif looks ke liye -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
     <style>
-        body { background-color: #050505; color: #ffffff; font-family: 'Helvetica Neue', Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
+        /* Pure website ka smooth background gradient aur font badla */
+        body { 
+            background: linear-gradient(180deg, #0d0d0d 0%, #000000 100%); 
+            color: #ffffff; 
+            font-family: 'Montserrat', Arial, sans-serif; 
+            text-align: center; 
+            margin: 0; 
+            padding: 0; 
+        }
         
         /* Bada Logo */
-        .logo-section { padding: 30px 10px; }
+        .logo-section { padding: 40px 10px 20px; }
         .logo-section img { width: 125px; max-width: 60%; height: auto; }
         
-        .section-title { color: #d4af37; font-size: 28px; letter-spacing: 3px; margin: 50px 0 30px; text-transform: uppercase; }
+        /* Section Title ko Royal look diya */
+        .section-title { 
+            font-family: 'Cinzel', serif;
+            color: #C5A059; /* Champagne Gold */
+            font-size: 28px; 
+            letter-spacing: 4px; 
+            margin: 40px 0 20px; 
+            text-transform: uppercase; 
+            font-weight: 500;
+        }
         
-        /* Product Card Design */
+        /* Product Grid Design */
         .grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 20px; }
-        .card { background: #111; padding: 20px; border-radius: 15px; width: 280px; border: 1px solid #333; transition: 0.4s; }
-        .card:hover { border-color: #d4af37; transform: translateY(-10px); }
-        .card img { width: 100%; height: 280px; object-fit: cover; border-radius: 10px; }
-        .card h3 { margin: 20px 0 5px; font-size: 20px; color: #fff; }
-        .card p { font-size: 14px; color: #aaa; margin-bottom: 10px; }
-        .card .price { color: #d4af37; font-size: 22px; font-weight: bold; margin-bottom: 15px; }
+        
+        /* Product Card ko Premium and Matte Dark look diya */
+        .card { 
+            background: #141414; 
+            padding: 16px; 
+            border-radius: 20px; 
+            width: 280px; 
+            border: 1px solid rgba(255, 255, 255, 0.04); 
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); 
+            overflow: hidden;
+        }
+        
+        /* Card par smooth uthav aur halka gold glow */
+        .card:hover { 
+            border-color: rgba(197, 160, 89, 0.3); 
+            transform: translateY(-8px); 
+            box-shadow: 0 12px 40px rgba(197, 160, 89, 0.08);
+        }
+        
+        /* Image container jisse image zoom ho sake */
+        .card-img-wrapper {
+            width: 100%;
+            height: 280px;
+            border-radius: 14px;
+            overflow: hidden;
+        }
+        
+        /* Image smooth zoom animation */
+        .card img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .card:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Watch Titles ko Dial se match karne ke liye Serif font diya */
+        .card h3 { 
+            font-family: 'Cinzel', serif;
+            margin: 18px 0 6px; 
+            font-size: 20px; 
+            color: #fff; 
+            letter-spacing: 0.5px;
+        }
+        
+        .card p { font-size: 13px; color: #8e8e93; margin: 0 0 14px; font-weight: 400; }
+        
+        /* Price ko Premium Matte Gold look diya */
+        .card .price { 
+            color: #C5A059; 
+            font-size: 21px; 
+            font-weight: 600; 
+            margin-bottom: 8px; 
+            letter-spacing: 0.5px;
+        }
         
         /* WhatsApp Button */
-        .whatsapp-btn { display: inline-block; margin: 50px 0; padding: 18px 40px; background: #25D366; color: #000; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 18px; transition: 0.3s; }
-        .whatsapp-btn:hover { background: #1ebd5d; transform: scale(1.05); }
+        .whatsapp-btn { 
+            display: inline-block; 
+            margin: 50px 0; 
+            padding: 16px 36px; 
+            background: #25D366; 
+            color: #000; 
+            text-decoration: none; 
+            border-radius: 50px; 
+            font-weight: bold; 
+            font-size: 18px; 
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.2);
+            transition: 0.3s; 
+        }
+        .whatsapp-btn:hover { background: #1ebd5d; transform: scale(1.03); box-shadow: 0 6px 24px rgba(37, 211, 102, 0.3); }
     </style>
 </head>
 <body>
@@ -40,35 +128,45 @@
     <div class="grid">
         <!-- Watch 1 -->
         <div class="card">
-            <img src="image_10.png" alt="Royal Gold">
+            <div class="card-img-wrapper">
+                <img src="image_10.png" alt="Royal Gold">
+            </div>
             <h3>Royal Gold</h3>
             <p>Premium metal strap elegance</p>
             <div class="price">₹4,499</div>
         </div>
         <!-- Watch 2 -->
         <div class="card">
-            <img src="image_09.png" alt="Classic Silver">
+            <div class="card-img-wrapper">
+                <img src="image_09.png" alt="Classic Silver">
+            </div>
             <h3>Classic Silver</h3>
             <p>Modern design with luxury finish</p>
             <div class="price">₹3,999</div>
         </div>
         <!-- Watch 3 -->
         <div class="card">
-            <img src="image_11.png" alt="Timeless Brown">
+            <div class="card-img-wrapper">
+                <img src="image_11.png" alt="Timeless Brown">
+            </div>
             <h3>Timeless Brown</h3>
             <p>Genuine leather for bold looks</p>
             <div class="price">₹3,499</div>
         </div>
         <!-- Watch 4 -->
         <div class="card">
-            <img src="watch1.png" alt="Luxury Driver">
+            <div class="card-img-wrapper">
+                <img src="watch1.png" alt="Luxury Driver">
+            </div>
             <h3>Luxury Driver</h3>
             <p>Perfect for daily wear</p>
             <div class="price">₹2,999</div>
         </div>
         <!-- Watch 5 -->
         <div class="card">
-            <img src="watch2.png" alt="Legacy Classic">
+            <div class="card-img-wrapper">
+                <img src="watch2.png" alt="Legacy Classic">
+            </div>
             <h3>Legacy Classic</h3>
             <p>Sophisticated and timeless</p>
             <div class="price">₹3,299</div>
@@ -78,7 +176,7 @@
     <!-- WhatsApp Button -->
     <a href="https://wa.me/919510753213" class="whatsapp-btn">Order on WhatsApp</a>
 
-    <footer style="padding: 40px; color: #555;">&copy; 2026 DUSKIN WATCHES. All Rights Reserved.</footer>
+    <footer style="padding: 40px; color: #444; font-size: 13px;">&copy; 2026 DUSKIN WATCHES. All Rights Reserved.</footer>
 
 </body>
 </html>
