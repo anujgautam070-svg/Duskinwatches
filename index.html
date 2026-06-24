@@ -219,4 +219,206 @@
             background: rgba(255, 255, 255, 0.02);
             border: 1px solid rgba(212, 175, 55, 0.1);
             padding: 30px 20px;
-            backdrop-filter
+            backdrop-filter: blur(10px);
+            transition: all 0.4s ease;
+            border-radius: 10px;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            border-color: #D4AF37;
+        }
+        
+        /* Icons size (Desktop) */
+        .contact-icon {
+            font-size: 1.3rem; 
+            margin-bottom: 15px;
+            color: #D4AF37;
+        }
+        .contact-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .contact-card a {
+            color: #ffffff; 
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            letter-spacing: 1px;
+            word-break: break-all;
+            display: block; 
+        }
+        .contact-card a:hover {
+            color: #D4AF37;
+        }
+
+        /* Footer */
+        footer {
+            background: #020202;
+            color: #555;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* Mobile Responsive Design */
+        @media (max-width: 768px) {
+            .contact-icon {
+                font-size: 1rem; 
+                margin-bottom: 10px;
+            }
+            .contact-card {
+                padding: 20px 15px;
+            }
+            .contact-card h3 {
+                font-size: 0.95rem;
+            }
+            .contact-card a {
+                font-size: 0.85rem;
+            }
+            nav {
+                display: none; 
+            }
+            header {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Duskin</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Master Every Second</h1>
+        <p>Precision Crafted 3D Designs & Timeless Elegance</p>
+        <a href="#collections" class="btn-gold">Explore Collection</a>
+    </section>
+
+    <section id="collections" class="collections">
+        <h2>Signature Series</h2>
+        <div class="watch-grid">
+            
+            <div class="category-card">
+                <h3>The Classic Minimal</h3>
+                <p>A refined dial with a seamless strap setup. Perfect for formal and everyday luxury.</p>
+                <button class="btn-small" onclick="toggleWatches('cat1', this)">View Watches</button>
+                <div id="cat1" class="hidden-watches">
+                    <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=600" alt="Classic Minimal" class="watch-img">
+                    <p class="price-tag">Premium Range</p>
+                    <a href="#contact" class="btn-gold" style="padding: 10px 20px; font-size: 0.85rem;">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <h3>Chronograph Elite</h3>
+                <p>Bold aesthetics with multi-dial precision. Designed for those who command time.</p>
+                <button class="btn-small" onclick="toggleWatches('cat2', this)">View Watches</button>
+                <div id="cat2" class="hidden-watches">
+                    <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?q=80&w=600" alt="Chronograph Elite" class="watch-img">
+                    <p class="price-tag">Premium Range</p>
+                    <a href="#contact" class="btn-gold" style="padding: 10px 20px; font-size: 0.85rem;">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <h3>Midnight Edition</h3>
+                <p>All-black matte finish with subtle gold accents. The ultimate statement piece.</p>
+                <button class="btn-small" onclick="toggleWatches('cat3', this)">View Watches</button>
+                <div id="cat3" class="hidden-watches">
+                    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=600" alt="Midnight Edition" class="watch-img">
+                    <p class="price-tag">Premium Range</p>
+                    <a href="#contact" class="btn-gold" style="padding: 10px 20px; font-size: 0.85rem;">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <h3>Royal Gold Series</h3>
+                <p>A touch of royalty. Pure elegance crafted in stunning gold tones.</p>
+                <button class="btn-small" onclick="toggleWatches('cat4', this)">View Watches</button>
+                <div id="cat4" class="hidden-watches">
+                    <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=600" alt="Royal Gold Series" class="watch-img">
+                    <p class="price-tag">Premium Range</p>
+                    <a href="#contact" class="btn-gold" style="padding: 10px 20px; font-size: 0.85rem;">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <h3>Silver Horizon</h3>
+                <p>Modern steel design for the contemporary trendsetter.</p>
+                <button class="btn-small" onclick="toggleWatches('cat5', this)">View Watches</button>
+                <div id="cat5" class="hidden-watches">
+                    <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?q=80&w=600" alt="Silver Horizon" class="watch-img">
+                    <p class="price-tag">Premium Range</p>
+                    <a href="#contact" class="btn-gold" style="padding: 10px 20px; font-size: 0.85rem;">Enquire Now</a>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <h3>Vintage Leather</h3>
+                <p>Premium crafted leather straps blended with classic dials.</p>
+                <button class="btn-small" onclick="toggleWatches('cat6', this)">View Watches</button>
+                <div id="cat6" class="hidden-watches">
+                    <img src="https://images.unsplash.com/photo-1548171915-e740b2a759be?q=80&w=600" alt="Vintage Leather" class="watch-img">
+                    <p class="price-tag">Premium Range</p>
+                    <a href="#contact" class="btn-gold" style="padding: 10px 20px; font-size: 0.85rem;">Enquire Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <p class="subtitle">Experience personalized service for your next timepiece.</p>
+        
+        <div class="contact-container">
+            <div class="contact-card">
+                <div class="contact-icon">✉️</div>
+                <h3>Email Us</h3>
+                <a href="mailto:Duskinwatches@gmail.com">Duskinwatches@gmail.com</a>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">💬</div>
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/919510753213" target="_blank">Message on WhatsApp</a>
+            </div>
+
+            <div class="contact-card">
+                <div class="contact-icon">📞</div>
+                <h3>Call Us</h3>
+                <a href="tel:+919510753213">Tap to Call Support</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Duskin Watches. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleWatches(id, btnElement) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+                btnElement.innerHTML = "View Watches";
+            } else {
+                content.style.display = "block";
+                btnElement.innerHTML = "Hide Watches";
+            }
+        }
+    </script>
+
+</body>
+</html>
