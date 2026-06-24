@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Duskin Watches | Premium Timepieces</title>
+    <!-- Luxury Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
     <style>
         /* Base & Luxury Theme Setup */
@@ -118,33 +119,42 @@
             margin: 0 auto;
         }
         
-        /* Category Card Setup */
-        .category-card {
+        .watch-card {
             background: #0f0f0f;
             border: 1px solid rgba(255,255,255,0.05);
-            padding: 40px 20px;
+            padding: 20px;
             transition: transform 0.4s ease, border-color 0.4s ease;
             text-align: center;
             border-radius: 10px;
         }
-        .category-card:hover {
+        .watch-card:hover {
+            transform: translateY(-10px);
             border-color: rgba(212, 175, 55, 0.4);
             box-shadow: 0 5px 20px rgba(0,0,0,0.5);
         }
-        .category-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
+        .watch-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
             margin-bottom: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .watch-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
             color: #ffffff;
             letter-spacing: 1px;
         }
-        .category-card p {
-            color: #888;
-            font-size: 0.95rem;
-            margin-bottom: 25px;
-            line-height: 1.6;
+        .price-tag {
+            color: #D4AF37;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            font-weight: 600;
         }
         .btn-small {
+            display: inline-block;
             background: transparent;
             color: #cccccc;
             padding: 10px 25px;
@@ -160,32 +170,6 @@
             background: #D4AF37;
             color: #000;
             border-color: #D4AF37;
-        }
-
-        /* Hidden Watches Container */
-        .hidden-watches {
-            display: none; 
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(212, 175, 55, 0.2);
-            animation: fadeIn 0.5s ease-in-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .watch-img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        .price-tag {
-            color: #D4AF37;
-            font-size: 1.1rem;
-            margin-bottom: 15px;
-            font-weight: 600;
         }
 
         /* Premium Contact Section */
@@ -228,7 +212,6 @@
             border-color: #D4AF37;
         }
         
-        /* Icons size (Desktop) */
         .contact-icon {
             font-size: 1.3rem; 
             margin-bottom: 15px;
@@ -290,6 +273,7 @@
 </head>
 <body>
 
+    <!-- Header -->
     <header>
         <div class="logo">Duskin</div>
         <nav>
@@ -299,80 +283,74 @@
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <h1>Master Every Second</h1>
         <p>Precision Crafted 3D Designs & Timeless Elegance</p>
         <a href="#collections" class="btn-gold">Explore Collection</a>
     </section>
 
+    <!-- Collections Section (Only 4 Watches) -->
     <section id="collections" class="collections">
         <h2>Signature Series</h2>
         <div class="watch-grid">
             
-            <div class="category-card">
+            <!-- Category 1 -->
+            <div class="watch-card">
+                <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=600" alt="Classic Minimal" class="watch-img">
                 <h3>The Classic Minimal</h3>
-                <p>A refined dial with a seamless strap setup. Perfect for formal and everyday luxury.</p>
-                <button class="btn-small" onclick="toggleWatches('cat1', this)">View Watches</button>
-                <div id="cat1" class="hidden-watches">
-                    <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=600" alt="Classic Minimal" class="watch-img">
-                    <p class="price-tag">Premium Range</p>
-                    <a href="#contact" class="btn-gold" style="padding: 10px 20px; font-size: 0.85rem;">Enquire Now</a>
-                </div>
+                <p class="price-tag">Premium Range</p>
+                <a href="#contact" class="btn-small">Enquire Now</a>
             </div>
 
-            <div class="category-card">
+            <!-- Category 2 -->
+            <div class="watch-card">
+                <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?q=80&w=600" alt="Chronograph Elite" class="watch-img">
                 <h3>Chronograph Elite</h3>
-                <p>Bold aesthetics with multi-dial precision. Designed for those who command time.</p>
-                <button class="btn-small" onclick="toggleWatches('cat2', this)">View Watches</button>
-                <div id="cat2" class="hidden-watches">
-                    <img src="https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?q=80&w=600" alt="Chronograph Elite" class="watch-img">
-                    <p class="price-tag">Premium Range</p>
-                    <a href="#contact" class="btn-gold" style="padding: 10px 20px; font-size: 0.85rem;">Enquire Now</a>
-                </div>
+                <p class="price-tag">Premium Range</p>
+                <a href="#contact" class="btn-small">Enquire Now</a>
             </div>
 
-            <div class="category-card">
+            <!-- Category 3 -->
+            <div class="watch-card">
+                <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=600" alt="Royal Gold Series" class="watch-img">
                 <h3>Royal Gold Series</h3>
-                <p>A touch of royalty. Pure elegance crafted in stunning gold tones.</p>
-                <button class="btn-small" onclick="toggleWatches('cat3', this)">View Watches</button>
-                <div id="cat3" class="hidden-watches">
-                    <img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?q=80&w=600" alt="Royal Gold Series" class="watch-img">
-                    <p class="price-tag">Premium Range</p>
-                    <a href="#contact" class="btn-gold" style="padding: 10px 20px; font-size: 0.85rem;">Enquire Now</a>
-                </div>
+                <p class="price-tag">Premium Range</p>
+                <a href="#contact" class="btn-small">Enquire Now</a>
             </div>
 
-            <div class="category-card">
+            <!-- Category 4 -->
+            <div class="watch-card">
+                <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?q=80&w=600" alt="Silver Horizon" class="watch-img">
                 <h3>Silver Horizon</h3>
-                <p>Modern steel design for the contemporary trendsetter.</p>
-                <button class="btn-small" onclick="toggleWatches('cat4', this)">View Watches</button>
-                <div id="cat4" class="hidden-watches">
-                    <img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?q=80&w=600" alt="Silver Horizon" class="watch-img">
-                    <p class="price-tag">Premium Range</p>
-                    <a href="#contact" class="btn-gold" style="padding: 10px 20px; font-size: 0.85rem;">Enquire Now</a>
-                </div>
+                <p class="price-tag">Premium Range</p>
+                <a href="#contact" class="btn-small">Enquire Now</a>
             </div>
 
         </div>
     </section>
 
+    <!-- Premium Contact Section -->
     <section id="contact" class="contact-section">
         <h2>Get In Touch</h2>
         <p class="subtitle">Experience personalized service for your next timepiece.</p>
         
         <div class="contact-container">
+            <!-- Email -->
             <div class="contact-card">
                 <div class="contact-icon">✉️</div>
                 <h3>Email Us</h3>
                 <a href="mailto:Duskinwatches@gmail.com">Duskinwatches@gmail.com</a>
             </div>
 
+            <!-- WhatsApp -->
             <div class="contact-card">
                 <div class="contact-icon">💬</div>
                 <h3>WhatsApp</h3>
                 <a href="https://wa.me/919510753213" target="_blank">Message on WhatsApp</a>
             </div>
 
+            <!-- Call -->
             <div class="contact-card">
                 <div class="contact-icon">📞</div>
                 <h3>Call Us</h3>
@@ -381,22 +359,10 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2026 Duskin Watches. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        function toggleWatches(id, btnElement) {
-            var content = document.getElementById(id);
-            if (content.style.display === "block") {
-                content.style.display = "none";
-                btnElement.innerHTML = "View Watches";
-            } else {
-                content.style.display = "block";
-                btnElement.innerHTML = "Hide Watches";
-            }
-        }
-    </script>
 
 </body>
 </html>
